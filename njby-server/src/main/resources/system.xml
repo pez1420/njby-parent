@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+
+	<setting name="siteName" value="南京碧源企业管理系统" />
+	<setting name="siteUrl" value="http://localhost" />
+	<setting name="logo" value="/upload/image/logo.gif" />
+
+	<setting name="address" value="南京新街口" />
+	<setting name="phone" value="15158064427" />
+	<setting name="zipCode" value="邮政编码" />
+	<setting name="email" value="pez1420@163.com" />
+	<setting name="qq" value="575467751" />
+
+	<setting name="uploadMaxSize" value="10" />
+	<setting name="uploadImageExtension" value="jpg,jpeg,bmp,gif,png" />
+	<setting name="imageUploadPath" value="/upload/image/${.now?string('yyyyMM')}/" />
+	
+	
+	<logConfig operation="系统设置" urlPattern="/admin/setting/update.jhtml" />
+	<logConfig operation="添加管理员" urlPattern="/admin/admin/save.jhtml" />
+	<logConfig operation="编辑管理员" urlPattern="/admin/admin/update.jhtml" />
+	<logConfig operation="删除管理员" urlPattern="/admin/admin/delete.jhtml" />
+	
+	<template id="index"      type="0" name="首页"    templatePath="/forward/index.ftl"           staticPath="/index.html" />
+	<template id="aboutus"    type="0" name="关于我们" templatePath="/forward/aboutus/aboutus.ftl" staticPath="/aboutus.html" />
+	<template id="services"   type="0" name="产品中心" templatePath="/forward/product/list.ftl"    staticPath="#" />
+	<template id="equipments" type="0" name="生产设备" templatePath="/forward/equipment/list.ftl"  staticPath="#" />
+	<template id="contactus"  type="0" name="联系我们" templatePath="/forward/contact/contact.ftl" staticPath="/contactus.html" />
+	<template id="productDetail"  type="0" name="商品详情" templatePath="/forward/product/product_detail.ftl" staticPath="/product/content/${createDate?string('yyyyMM')}/${id}.html" />
+</system>

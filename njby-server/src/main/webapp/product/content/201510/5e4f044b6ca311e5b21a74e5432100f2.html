@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>南京秦淮区碧源礼品文化经营部</title>
+    <link href="/njby-server/uilib/bootstrap-3/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="/njby-server/uilib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+    <link href="/njby-server/resources/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/njby-server/uilib/fancyzoom/css/fancyzoom.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <style>
+        .main_details {
+            margin-bottom: 50px
+            background: #ffffff;
+        }
+        .wrap{
+            margin:0 auto;
+            width:90%;
+        }
+        .main{
+            padding: 2%;/*上右下左的值都一样  %规定基于父元素的宽度的百分比的内边距 */
+        }
+        .left_content{
+            width: 72.3333%;
+            float: left;
+        }
+        .left_sidebar{
+            width: 22.3333%;
+            float: left;
+            margin-left: 4.33333%;
+        }
+        .span1_of_1{
+            float: left;
+            width: 52.3333%;
+        }
+        .span1_of_1_des{
+            float: right;
+            width: 44.3333%;
+            margin-left: 3.333%;
+        }
+
+        .product-view {
+        }
+        .product-image img{
+            width : 100%;
+            height: 90%;
+        }
+
+        /*产品介绍tab*/
+        .product_tab {
+            position: relative;
+            margin: 40px auto;
+        }
+
+        .product_tab li {
+            width:30%;
+            font-size: 1.5em;
+        }
+
+        .product_tab > ul li a:hover {
+            background: #FCFCFC;
+            color: #5EAFA5;
+        }
+
+        .product_img_many {
+            margin-top:15px;
+        }
+
+
+        /* 商品属性 */
+        .desc1 {
+            display: block;
+            float: right;
+        }
+        .desc1 h3{
+            text-shadow: 0 1px 0 #ffffff;
+            color:#555555;
+            font-size:2em;
+            margin-bottom: 10px;
+        }
+        .desc1 h5{
+            margin-top: 2%;
+            font-size: 1.6em;
+            color: #5EAFA5;
+            line-height: 1.5em;
+            text-shadow: 0 1px 0 #ffffff;
+        }
+        .desc1 h5 a{
+            margin-left:5px;
+            color:#555555;
+            text-transform:capitalize;
+            font-size: 14px;
+        }
+        .desc1 h5 a:hover{
+            color: #5EAFA5;
+        }
+        .desc1 p{
+            font-size: 1.0em;
+            color: #555555;
+            line-height: 1.8em;
+        }
+
+        .available {
+            margin-top: 10px;
+            padding: 15px 0;
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+        }
+        .available h4{
+            font-size: 1.1em;
+            color: #777;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 0 1px 0 #ffffff;
+        }
+        .available li {
+            display: inline;
+            font-size: 0.8125em;
+            padding: 1.5% 2%;
+            color: #555555;
+        }
+
+        .available span a{
+            padding-top: 35px;
+            display: block;
+            color: #555555;
+            font-size: 1em;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-right: 10px;
+        }
+        .available span a:hover{
+            text-decoration: none;
+        }
+
+        /* 热销商品 */
+        .sellers{
+            border: 1px solid rgb(235, 235, 235);
+        }
+        .sellers h4{
+            font-size: 2em;
+            color: #ffffff;
+            line-height: 1.5em;
+            text-shadow: 0 1px 0 #1C6159;
+            padding: 10px 20px;
+            background: #5EAFA5;
+        }
+        .single-nav li {
+            list-style-type: none;
+            border-bottom: 1px dotted #E8E8E8;
+        }
+        .single-nav li a {
+            text-decoration: none; /*去掉下划线*/
+            text-transform: capitalize; /*首字母大写*/
+            font-size: 1.0em;  /*字体大小*/
+            color: #555555;
+            padding: 15px 20px;
+            display: block;
+        }
+        .single-nav li a:hover {
+            background: #FCFCFC;
+            color: #5EAFA5;
+        }
+
+        .empty-pos {
+            margin-top: 20px;
+        }
+        .clear{
+            clear:both;/*在左右两侧均不允许浮动元素。*/
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- 网页头部 -->
+<!-- 网页头部 -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><i class="fa fa-sun-o"></i>南京碧源企业管理系统</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+	            			<li class="active">
+	            				<a href="/njby-server/index.html" >首页</a>
+	            			</li>
+	            			<li>
+	            				<a href="/njby-server/aboutus.html" >关于我们</a>
+	            			</li>
+	            			<li>
+	            				<a href="/njby-server/product/list/30b5d0721d4d11e5bf3b74e5432100f2.jhtml" >产品中心</a>
+	            			</li>
+	            			<li>
+	            				<a href="/njby-server/equipment/list.jhtml" >生产设备</a>
+	            			</li>
+	            			<li>
+	            				<a href="/njby-server/contactus.html" >联系我们</a>
+	            			</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main_details">
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="main">
+                <div class="left_content">
+                    <div class="span1_of_1">
+                        <div class="product-view">
+                            <div class="product-image">
+                                <img src="/njby-server/resources/images/bnr1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span1_of_1_des">
+                        <div class="desc1">
+                            <h3>笔记本10 </h3>
+                            <p>名片100张印刷.经营不...</p>
+
+                        </div>
+                    </div>
+
+                    <div class="clear">
+                    </div>
+                    <div class="product_tab">
+                        <ul class="nav nav-tabs" id="product_tab">
+                            <li class="active"><a href="#product_tab_1">商品简介</a></li>
+                            <li><a href="#product_tab_2">商品展示</a></li>
+                            <li><a href="#product_tab_3">客户案例</a></li>
+                        </ul>
+                        <div class="tab-content">
+
+                            <div class="tab-pane active" id="product_tab_1">
+                                <br/>
+                                <p>名片100张印刷.经营不干胶,金涤纶、银涤纶、透明不干胶、标油墨、慢干783、丝网、名片、图签、标贴、人像卡、工作卡、文设计、台历,挂历等</p>
+                            </div>
+                            <div class="tab-pane" id="product_tab_2">
+                                <div class="product_img_many">
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="product_tab_3">...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_sidebar">
+                    <div class="sellers">
+                        <h4>热销商品</h4>
+                        <div class="single-nav">
+                            <ul>
+                                <li><a href="#">胶版纸</a></li>
+                                <li><a href="#">铜版纸</a></li>
+                                <li><a href="#">可变信息纸</a></li>
+                                <li><a href="#">镭射纸</a></li>
+                                <li><a href="#">荧光纸</a></li>
+                                <li><a href="#">铝箔纸</a></li>
+                                <li><a href="#">镀金纸</a></li>
+                                <li><a href="#">易碎（防伪）纸</a></li>
+                                <li><a href="#">镀银纸</a></li>
+                                <li><a href="#">夹心铜版纸</a></li>
+                                <li><a href="#">珠光纸</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="empty-pos">
+
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8"><span class="copyright">Copyright &copy; 2015 南京碧源文化礼品经营部. Design by <a
+                    href="#" rel="nofollow">pez1420</a></span></div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/njby-server/resources/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="/njby-server/resources/less-1.7.5.min.js"></script>
+<script type="text/javascript" src="/njby-server/uilib/bootstrap-3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/njby-server/uilib/fancyzoom/js/jquery.fancyzoom.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#product_tab > li > a').click(function (e) {
+            e.preventDefault();//阻止a链接的跳转行为
+            $(this).tab('show');
+        });
+
+        $(".product_img_many > a").fancyZoom();
+    });
+
+</script>
+
+</body>
+</html>
